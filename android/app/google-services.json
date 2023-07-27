@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "626211141344",
+    "project_id": "ecommerce-98828",
+    "storage_bucket": "ecommerce-98828.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:626211141344:android:5037662907516c7fefc285",
+        "android_client_info": {
+          "package_name": "com.example.flutter_hair_cleaner_firebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "626211141344-nnmgftmjuflce1dd5g8nac7an1ao9l89.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.flutter_hair_cleaner_firebase",
+            "certificate_hash": "7aa4e4b381d5546defcf5098a7389bdfc9aefa20"
+          }
+        },
+        {
+          "client_id": "626211141344-ihqqqjccse3a20ca9ljl15k1osb45q8i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAYRK7A6VhmbuxQg8Tt7kLrWQ7gKidgGdI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "626211141344-ihqqqjccse3a20ca9ljl15k1osb45q8i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
