@@ -84,9 +84,62 @@ class ProductModel {
   static const String LeLaboSantalEauDeParfumFragranceProduct =
       "le_labo_santal_eau_de_parfum_fragrance_product";
 
-  static const String shampooCollection = "shampoo";
-  static const String babyProductsCollection = "baby_products";
-  static const String makeupCollection = "makeup";
+  static const String shoesCollection = "shoes_categories";
+
+  static const String LoaferShoesProduct = "loafer_shoes_product";
+
+  static const String SneakersShoesProducts = "sneakers_shoes_product";
+
+  static const String SandalShoesProduct = "sandal_shoes_product";
+
+  static const String MoccasinShoesProduct = "moccasin_shoes_product";
+
+  static const String DressShoeShoesProduct = "dress_shoe_shoes_product";
+
+  static const String MaryJaneShoesProduct = "mary_jane_shoes_product";
+
+  static const String SlippersShoesProduct = "slippers_shoes_product";
+
+  static const String ClothesCollection = "clothes_categories";
+
+  static const String TrousersClothesProduct = "trousers_clothes_product";
+
+  static const String JacketClothesProduct = "jacket_clothes_product";
+
+  static const String SweaterClothesProduct = "sweater_clothes_product";
+
+  static const String TShirtClothesProduct = "t_shirt_clothes_product";
+
+  static const String CoatClothesProduct = "coat_clothes_product";
+
+  static const String SkirtClothesProduct = "skirt_clothes_product";
+
+  static const String WaistcoatClothesProduct = "waistcoat_clothes_product";
+
+  static const String HoodieClothesProduct = "hoodie_clothes_product";
+
+  static const String HomeApplianceCollection = "home_appliance";
+
+  static const String RefrigeratorHomeApplianceProduct =
+      "refrigerator_home_appliance_product";
+
+  static const String MicrowaveHomeApplianceProduct =
+      "microwave_home_appliance_product";
+
+  static const String BlenderHomeApplianceProduct =
+      "blender_home_appliance_product";
+
+  static const String WashingMachineHomeApplianceProduct =
+      "washing_machine_home_appliance_product";
+
+  static const String VacuumCleanerHomeApplianceProduct =
+      "vacuum_cleaner_home_appliance_product";
+
+  static const String FreezerHomeApplianceProduct =
+      "freezer_home_appliance_product";
+
+  static const String ClothesIronHomeApplianceProduct =
+      "clothes_iron_home_appliance_product";
 
   static const String CartDataCollection = "cart_data";
   // Map<String, dynamic> toMap() {

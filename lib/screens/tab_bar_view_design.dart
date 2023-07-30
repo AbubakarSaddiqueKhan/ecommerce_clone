@@ -110,7 +110,7 @@ class _TabBarViewDesignState extends State<TabBarViewDesign> {
                       // ProductModel productModel = ProductModel.fromMap(
                       //     snapshot.data!.docs[index].data());
                       return Container(
-                          width: screenWidth * 0.4,
+                          width: screenWidth * 0.6,
                           height: clientHeight * 0.5,
                           decoration: BoxDecoration(
                               // image: DecorationImage(image: NetworkImage(
@@ -119,7 +119,7 @@ class _TabBarViewDesignState extends State<TabBarViewDesign> {
                               ),
                           child: Image.network(
                             data[ProductModel.KeyProductImageUrl],
-                            fit: BoxFit.cover,
+                            fit: BoxFit.fill,
                           )
                           // child: Image(
                           //   image: NetworkImage(

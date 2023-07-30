@@ -328,18 +328,290 @@ class _AddDataToFirebaseState extends State<AddDataToFirebase> {
             //     },
             //     child: Text("Add cart collection"))
 
+            // ElevatedButton(
+            //     onPressed: () async {
+            //       firebaseFirestore
+            //           .collection(ProductModel.fragrancesCollection)
+            //           .doc(ProductModel
+            //               .DaisyEauSoFreshMarcJacobsEauDeToiletteFragranceProduct)
+            //           .update({
+            //         ProductModel.KeyProductName:
+            //             "Daisy Eau So Fresh Marc Jacobs"
+            //       });
+            //     },
+            //     child: Text("Update data"))
+
+            // ElevatedButton(
+            //     onPressed: () async {
+            //       CollectionReference shoesCollection = firebaseFirestore
+            //           .collection(ProductModel.shoesCollection);
+
+            //       await shoesCollection
+            //           .doc(ProductModel.LoaferShoesProduct)
+            //           .set({
+            //         ProductModel.keyProductId: ProductModel.LoaferShoesProduct,
+            //         ProductModel.KeyProductName: "Loafer",
+            //         ProductModel.KeyProductPrice: 3500,
+            //         ProductModel.KeyProductImageUrl:
+            //             "https://firebasestorage.googleapis.com/v0/b/ecommerce-98828.appspot.com/o/Shoes%20Collection%2FLoafer.png?alt=media&token=d827bc01-06bf-44db-9524-885ab1a8e784"
+            //       });
+
+            //       await shoesCollection
+            //           .doc(ProductModel.SneakersShoesProducts)
+            //           .set({
+            //         ProductModel.keyProductId:
+            //             ProductModel.SneakersShoesProducts,
+            //         ProductModel.KeyProductName: "Sneakers",
+            //         ProductModel.KeyProductPrice: 3000,
+            //         ProductModel.KeyProductImageUrl:
+            //             "https://firebasestorage.googleapis.com/v0/b/ecommerce-98828.appspot.com/o/Shoes%20Collection%2FSneakers.png?alt=media&token=6b1b33bd-2277-4076-aa3f-324d78cab6a9"
+            //       });
+
+            //       await shoesCollection
+            //           .doc(ProductModel.SandalShoesProduct)
+            //           .set({
+            //         ProductModel.keyProductId: ProductModel.SandalShoesProduct,
+            //         ProductModel.KeyProductName: "Sandal",
+            //         ProductModel.KeyProductPrice: 3200,
+            //         ProductModel.KeyProductImageUrl:
+            //             "https://firebasestorage.googleapis.com/v0/b/ecommerce-98828.appspot.com/o/Shoes%20Collection%2FSandal.png?alt=media&token=08e697b7-3869-459e-a7ad-4f011df2576c"
+            //       });
+
+            //       await shoesCollection
+            //           .doc(ProductModel.MoccasinShoesProduct)
+            //           .set({
+            //         ProductModel.keyProductId:
+            //             ProductModel.MoccasinShoesProduct,
+            //         ProductModel.KeyProductName: "Moccasin",
+            //         ProductModel.KeyProductPrice: 8500,
+            //         ProductModel.KeyProductImageUrl:
+            //             "https://firebasestorage.googleapis.com/v0/b/ecommerce-98828.appspot.com/o/Shoes%20Collection%2FMoccasin.png?alt=media&token=83ec6d0d-e2fc-41f5-b28b-83f563f11135"
+            //       });
+
+            //       await shoesCollection
+            //           .doc(ProductModel.DressShoeShoesProduct)
+            //           .set({
+            //         ProductModel.keyProductId:
+            //             ProductModel.DressShoeShoesProduct,
+            //         ProductModel.KeyProductName: "Dress Shoe",
+            //         ProductModel.KeyProductPrice: 2500,
+            //         ProductModel.KeyProductImageUrl:
+            //             "https://firebasestorage.googleapis.com/v0/b/ecommerce-98828.appspot.com/o/Shoes%20Collection%2FDress_shoe.png?alt=media&token=2471efc8-b49a-41c0-9315-f8ba8157f000"
+            //       });
+
+            //       await shoesCollection
+            //           .doc(ProductModel.MaryJaneShoesProduct)
+            //           .set({
+            //         ProductModel.keyProductId:
+            //             ProductModel.MaryJaneShoesProduct,
+            //         ProductModel.KeyProductName: "Mary Jane",
+            //         ProductModel.KeyProductPrice: 5000,
+            //         ProductModel.KeyProductImageUrl:
+            //             "https://firebasestorage.googleapis.com/v0/b/ecommerce-98828.appspot.com/o/Shoes%20Collection%2FMary_Jane.png?alt=media&token=3d186788-4bb4-4a72-ba2b-ae27a19268c1"
+            //       });
+
+            //       await shoesCollection
+            //           .doc(ProductModel.SlippersShoesProduct)
+            //           .set({
+            //         ProductModel.keyProductId:
+            //             ProductModel.SlippersShoesProduct,
+            //         ProductModel.KeyProductName: "Slippers",
+            //         ProductModel.KeyProductPrice: 2000,
+            //         ProductModel.KeyProductImageUrl:
+            //             "https://firebasestorage.googleapis.com/v0/b/ecommerce-98828.appspot.com/o/Shoes%20Collection%2FSlippers.png?alt=media&token=67dd1672-5092-422e-a04f-017107d0eef8"
+            //       });
+
+            //       ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+            //           content: Text(
+            //               "Shoes data successfully added to the firebase")));
+            //     },
+            //     child: Text("Add shoes collection to firebase"))
+
+            // ElevatedButton(
+            //     onPressed: () async {
+            //       CollectionReference clothesCollection = firebaseFirestore
+            //           .collection(ProductModel.ClothesCollection);
+
+            //       await clothesCollection
+            //           .doc(ProductModel.TrousersClothesProduct)
+            //           .set({
+            //         ProductModel.keyProductId:
+            //             ProductModel.TrousersClothesProduct,
+            //         ProductModel.KeyProductName: "Trousers",
+            //         ProductModel.KeyProductPrice: 6000,
+            //         ProductModel.KeyProductImageUrl:
+            //             "https://firebasestorage.googleapis.com/v0/b/ecommerce-98828.appspot.com/o/Clothes%20Categories%2FTrousers.png?alt=media&token=c57f5f47-9c9a-41b0-bf3f-00faac6ba287"
+            //       });
+
+            //       await clothesCollection
+            //           .doc(ProductModel.JacketClothesProduct)
+            //           .set({
+            //         ProductModel.keyProductId:
+            //             ProductModel.JacketClothesProduct,
+            //         ProductModel.KeyProductName: "Jacket",
+            //         ProductModel.KeyProductPrice: 3500,
+            //         ProductModel.KeyProductImageUrl:
+            //             "https://firebasestorage.googleapis.com/v0/b/ecommerce-98828.appspot.com/o/Clothes%20Categories%2FJacket.png?alt=media&token=f328360e-a024-490c-b8b2-44cc96406de7"
+            //       });
+
+            //       await clothesCollection
+            //           .doc(ProductModel.SweaterClothesProduct)
+            //           .set({
+            //         ProductModel.keyProductId:
+            //             ProductModel.SweaterClothesProduct,
+            //         ProductModel.KeyProductName: "Sweater",
+            //         ProductModel.KeyProductPrice: 3000,
+            //         ProductModel.KeyProductImageUrl:
+            //             "https://firebasestorage.googleapis.com/v0/b/ecommerce-98828.appspot.com/o/Clothes%20Categories%2FSweater.png?alt=media&token=756ee417-7e8a-494f-8d29-7f9c97af5d3d"
+            //       });
+
+            //       await clothesCollection
+            //           .doc(ProductModel.TShirtClothesProduct)
+            //           .set({
+            //         ProductModel.keyProductId:
+            //             ProductModel.TShirtClothesProduct,
+            //         ProductModel.KeyProductName: "T Shirt",
+            //         ProductModel.KeyProductPrice: 6500,
+            //         ProductModel.KeyProductImageUrl:
+            //             "https://firebasestorage.googleapis.com/v0/b/ecommerce-98828.appspot.com/o/Clothes%20Categories%2FT-shirt.png?alt=media&token=6849a3de-fe15-4f32-9fed-9952fa81cecb"
+            //       });
+
+            //       await clothesCollection
+            //           .doc(ProductModel.CoatClothesProduct)
+            //           .set({
+            //         ProductModel.keyProductId: ProductModel.CoatClothesProduct,
+            //         ProductModel.KeyProductName: "Coat",
+            //         ProductModel.KeyProductPrice: 19000,
+            //         ProductModel.KeyProductImageUrl:
+            //             "https://firebasestorage.googleapis.com/v0/b/ecommerce-98828.appspot.com/o/Clothes%20Categories%2FCoat.png?alt=media&token=9ec6e673-b551-4802-988b-0c7d26bde7fb"
+            //       });
+
+            //       await clothesCollection
+            //           .doc(ProductModel.SkirtClothesProduct)
+            //           .set({
+            //         ProductModel.keyProductId: ProductModel.SkirtClothesProduct,
+            //         ProductModel.KeyProductName: "Skirt",
+            //         ProductModel.KeyProductPrice: 4500,
+            //         ProductModel.KeyProductImageUrl:
+            //             "https://firebasestorage.googleapis.com/v0/b/ecommerce-98828.appspot.com/o/Clothes%20Categories%2FSkirt.png?alt=media&token=348cfe56-d60f-4b12-bd94-32ce41c6c6c4"
+            //       });
+
+            //       await clothesCollection
+            //           .doc(ProductModel.WaistcoatClothesProduct)
+            //           .set({
+            //         ProductModel.keyProductId:
+            //             ProductModel.WaistcoatClothesProduct,
+            //         ProductModel.KeyProductName: "WaistCoat",
+            //         ProductModel.KeyProductPrice: 13000,
+            //         ProductModel.KeyProductImageUrl:
+            //             "https://firebasestorage.googleapis.com/v0/b/ecommerce-98828.appspot.com/o/Clothes%20Categories%2FWaistcoat.png?alt=media&token=3383eef7-d70c-47fd-9b55-ba3ddc5e7540"
+            //       });
+
+            //       await clothesCollection
+            //           .doc(ProductModel.HoodieClothesProduct)
+            //           .set({
+            //         ProductModel.keyProductId:
+            //             ProductModel.HoodieClothesProduct,
+            //         ProductModel.KeyProductName: "Hoodie",
+            //         ProductModel.KeyProductPrice: 5000,
+            //         ProductModel.KeyProductImageUrl:
+            //             "https://firebasestorage.googleapis.com/v0/b/ecommerce-98828.appspot.com/o/Clothes%20Categories%2FHoodie.png?alt=media&token=54d04c2c-6281-4516-8f3c-66ebe8176ee7"
+            //       });
+
+            //       ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+            //           content: Text(
+            //               "Clothes COLLECTION Added Successfully to firebase")));
+            //     },
+            //     child: Text("Add Clothes to the firebase"))
+
             ElevatedButton(
                 onPressed: () async {
-                  firebaseFirestore
-                      .collection(ProductModel.fragrancesCollection)
-                      .doc(ProductModel
-                          .DaisyEauSoFreshMarcJacobsEauDeToiletteFragranceProduct)
-                      .update({
-                    ProductModel.KeyProductName:
-                        "Daisy Eau So Fresh Marc Jacobs"
+                  CollectionReference homeApplianceCollectionReference =
+                      firebaseFirestore
+                          .collection(ProductModel.HomeApplianceCollection);
+
+                  await homeApplianceCollectionReference
+                      .doc(ProductModel.RefrigeratorHomeApplianceProduct)
+                      .set({
+                    ProductModel.keyProductId:
+                        ProductModel.RefrigeratorHomeApplianceProduct,
+                    ProductModel.KeyProductName: "Refrigerator",
+                    ProductModel.KeyProductPrice: 135000,
+                    ProductModel.KeyProductImageUrl:
+                        "https://firebasestorage.googleapis.com/v0/b/ecommerce-98828.appspot.com/o/Home%20Appliance%2Frefrigerator.png?alt=media&token=b0a7ade3-2555-47ca-8964-3c528b032cbb"
                   });
+
+                  await homeApplianceCollectionReference
+                      .doc(ProductModel.MicrowaveHomeApplianceProduct)
+                      .set({
+                    ProductModel.keyProductId:
+                        ProductModel.MicrowaveHomeApplianceProduct,
+                    ProductModel.KeyProductName: "Microwave",
+                    ProductModel.KeyProductPrice: 61500,
+                    ProductModel.KeyProductImageUrl:
+                        "https://firebasestorage.googleapis.com/v0/b/ecommerce-98828.appspot.com/o/Home%20Appliance%2FMicrowave.png?alt=media&token=2a1d3047-6699-4367-8aae-78d3a58dcfc5"
+                  });
+
+                  await homeApplianceCollectionReference
+                      .doc(ProductModel.BlenderHomeApplianceProduct)
+                      .set({
+                    ProductModel.keyProductId:
+                        ProductModel.BlenderHomeApplianceProduct,
+                    ProductModel.KeyProductName: "Blender",
+                    ProductModel.KeyProductPrice: 45000,
+                    ProductModel.KeyProductImageUrl:
+                        "https://firebasestorage.googleapis.com/v0/b/ecommerce-98828.appspot.com/o/Home%20Appliance%2FBlender.png?alt=media&token=37f5a849-eca5-436b-bd39-1e4517bc9fe3"
+                  });
+
+                  await homeApplianceCollectionReference
+                      .doc(ProductModel.WashingMachineHomeApplianceProduct)
+                      .set({
+                    ProductModel.keyProductId:
+                        ProductModel.WashingMachineHomeApplianceProduct,
+                    ProductModel.KeyProductName: "Washing Machine",
+                    ProductModel.KeyProductPrice: 263500,
+                    ProductModel.KeyProductImageUrl:
+                        "https://firebasestorage.googleapis.com/v0/b/ecommerce-98828.appspot.com/o/Home%20Appliance%2FWashing_machine.png?alt=media&token=08795de6-1f18-48a0-a754-fa7a6254d1e7"
+                  });
+
+                  await homeApplianceCollectionReference
+                      .doc(ProductModel.VacuumCleanerHomeApplianceProduct)
+                      .set({
+                    ProductModel.keyProductId:
+                        ProductModel.VacuumCleanerHomeApplianceProduct,
+                    ProductModel.KeyProductName: "Vacuum Cleaner",
+                    ProductModel.KeyProductPrice: 102500,
+                    ProductModel.KeyProductImageUrl:
+                        "https://firebasestorage.googleapis.com/v0/b/ecommerce-98828.appspot.com/o/Home%20Appliance%2FVacuum_cleaner.png?alt=media&token=fef86e8c-dea6-4c35-a9d4-ccacb5a7a73e"
+                  });
+
+                  await homeApplianceCollectionReference
+                      .doc(ProductModel.FreezerHomeApplianceProduct)
+                      .set({
+                    ProductModel.keyProductId:
+                        ProductModel.FreezerHomeApplianceProduct,
+                    ProductModel.KeyProductName: "Freezer",
+                    ProductModel.KeyProductPrice: 170000,
+                    ProductModel.KeyProductImageUrl:
+                        "https://firebasestorage.googleapis.com/v0/b/ecommerce-98828.appspot.com/o/Home%20Appliance%2FFreezer.png?alt=media&token=73e36f95-04fb-4b84-aaa8-0865079db513"
+                  });
+
+                  await homeApplianceCollectionReference
+                      .doc(ProductModel.ClothesIronHomeApplianceProduct)
+                      .set({
+                    ProductModel.keyProductId:
+                        ProductModel.ClothesIronHomeApplianceProduct,
+                    ProductModel.KeyProductName: "Clothes Iron",
+                    ProductModel.KeyProductPrice: 17000,
+                    ProductModel.KeyProductImageUrl:
+                        "https://firebasestorage.googleapis.com/v0/b/ecommerce-98828.appspot.com/o/Home%20Appliance%2FClothes_iron.png?alt=media&token=db5e9267-dd92-42f5-a8d6-742cb8e1c0b8"
+                  });
+
+                  ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+                      content: Text(
+                          "Home appliance data successsfully added to the firebase")));
                 },
-                child: Text("Update data"))
+                child: Text("Add home appliance data to firebase"))
           ],
         ),
       ),

@@ -134,13 +134,13 @@ class _ProductsHomePageDesignState extends State<ProductsHomePageDesign>
               text: 'Fragrances',
             ),
             Tab(
-              text: 'Shampoo',
+              text: 'Shoes',
             ),
             Tab(
-              text: 'Baby Products',
+              text: 'Clothes',
             ),
             Tab(
-              text: 'Make Up',
+              text: 'Home Appliance',
             ),
           ],
         ),
@@ -159,9 +159,18 @@ class _ProductsHomePageDesignState extends State<ProductsHomePageDesign>
             firestoreCollection: FirebaseFirestore.instance
                 .collection(ProductModel.fragrancesCollection)
                 .snapshots()),
-        TabBarViewDesign(firestoreCollection: firebaseCollection),
-        TabBarViewDesign(firestoreCollection: firebaseCollection),
-        TabBarViewDesign(firestoreCollection: firebaseCollection),
+        TabBarViewDesign(
+            firestoreCollection: FirebaseFirestore.instance
+                .collection(ProductModel.shoesCollection)
+                .snapshots()),
+        TabBarViewDesign(
+            firestoreCollection: FirebaseFirestore.instance
+                .collection(ProductModel.ClothesCollection)
+                .snapshots()),
+        TabBarViewDesign(
+            firestoreCollection: FirebaseFirestore.instance
+                .collection(ProductModel.HomeApplianceCollection)
+                .snapshots()),
       ]),
     );
   }

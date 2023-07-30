@@ -12,14 +12,13 @@ void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp(
       // this code is for web enables
-      // options: const FirebaseOptions(
-      //     apiKey: "AIzaSyBIkilyHaQ8eW1FNfM7luhc20ARvtMAHhs",
-      //     authDomain: "ecommerce-98828.firebaseapp.com",
-      //     projectId: "ecommerce-98828",
-      //     storageBucket: "ecommerce-98828.appspot.com",
-      //     messagingSenderId: "626211141344",
-      //     appId: "1:626211141344:web:a3f5ddeb30490816efc285")
-      );
+      options: const FirebaseOptions(
+          apiKey: "AIzaSyBIkilyHaQ8eW1FNfM7luhc20ARvtMAHhs",
+          authDomain: "ecommerce-98828.firebaseapp.com",
+          projectId: "ecommerce-98828",
+          storageBucket: "ecommerce-98828.appspot.com",
+          messagingSenderId: "626211141344",
+          appId: "1:626211141344:web:a3f5ddeb30490816efc285"));
   runApp(const MyApp());
 }
 
